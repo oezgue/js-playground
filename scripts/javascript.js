@@ -1,3 +1,5 @@
+import { greet } from "./js-module.js";
+
 console.log('Hello, oezgue!');
 const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
@@ -6,5 +8,9 @@ function logPlanets() {
 
   planets.map( (planet) => {console.log('Hello ' + planet)});
 }
-
+/*
 logPlanets();
+*/
+
+// Call function from another file
+greet();
