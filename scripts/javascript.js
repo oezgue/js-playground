@@ -19,6 +19,19 @@ logPlanets();
 greet();
 */
 /*
-createButton();
+createButton(); // create a button with javascript
 */
-createButtons(planets);
+/*
+createButtons(planets); // render many buttons from the planets array
+*/
+
+// Rest API with Backend
+fetch("http://localhost:8080/hello")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((data) => console.log(data))
+  .catch((error) => console.error("Error:", error));
